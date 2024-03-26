@@ -30,10 +30,11 @@ public class Streams {
 		System.out.println(names2);
 		names2.stream().forEach(
 				eachName -> System.out.println(eachName + " count -> " + countOccuranceInList(names, eachName)));
+		
 //1
 		System.err.println("stram questions");
 		System.err.println("---------------");
-		// give a list of integrs, find out all the numbers starting with 1 using stram
+		// give a list of integers, find out all the numbers starting with 1 using stram
 		// function
 		System.err.println("1. give a list of integrs, find out all the numbers starting with 1 using stram function?");
 
