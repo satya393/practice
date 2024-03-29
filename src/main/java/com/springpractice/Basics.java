@@ -146,6 +146,15 @@ public class Basics {
 		 namesList.stream().filter(e -> e!=null).sorted(Comparator.reverseOrder()).forEach(e-> System.out.println(e));
 		 Collections.reverse(namesList);
 		System.out.println( namesList.stream().toList());
+
+// frequency
+		String text = "satyam";
+		System.out.println(text.chars().mapToObj(c -> (char) c).collect(Collectors.groupingBy(e -> e,Collectors.counting())));	
+// frequency
+		List<String> elements = Arrays.asList("apple","apple","bananna");
+		System.out.println(elements.stream().collect(Collectors.groupingBy(e -> e)));
+                System.out.println(elements.stream().collect(Collectors.groupingBy(e -> e, Collectors.counting())));	         
+		
 	}
 
 }
